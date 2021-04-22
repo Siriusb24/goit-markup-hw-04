@@ -194,6 +194,8 @@ li {
 
 .feature {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -201,6 +203,8 @@ li {
 }
 
 .feature-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .specifics .skills {
@@ -252,7 +256,7 @@ li {
 
 .organization {
     padding-top: 94px;
-    padding-bottom: 10px;
+    padding-bottom: 94px;
     background-color: var(--thirt-color);
     text-align: center;
 }
@@ -265,13 +269,14 @@ li {
 }
 
 .card-woker {
+    background-color: var(--alt-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .card-woker .card-item {
-    padding: 30px 32px;
+    padding: 30px 32px 16px 32px;
 }
 
 .team-woker .card-woker:not(:last-child) {
@@ -296,8 +301,67 @@ li {
     letter-spacing: 0.03em;
 }
 
-.social-icons {
+.social-links {
     display: inline-flex;
+    padding-left: 0;
+    padding-bottom: 30px;
+}
+
+.social-links .social-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-links .social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--alt-color);
+    border-radius: 50%;
+}
+
+.social-icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-icon-link:hover .social-icon-svg,
+.social-icon-link:focus .social-icon-svg {
+    fill: var(--alt-color);
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
 }
 
 .basement {
