@@ -57,7 +57,7 @@ li {
 }
 
 .menu .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -66,8 +66,8 @@ li {
     margin-right: 50px;
 }
 
-.communication {
-    display: flex;
+.communication-nav {
+    display: inline-flex;
 }
 
 .communication-nav:not(:last-child) {
@@ -82,6 +82,8 @@ li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .list .link {
@@ -92,9 +94,18 @@ li {
 .list .link.current {
     color: var(--accent-color);
 }
-.links .contacts {
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--main-color);
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: var(--main-color);
 }
 
 .list .link:hover,
@@ -102,12 +113,18 @@ li {
     color: var(--accent-color);
 }
 
-.studio:valid {
+.links .contacts:hover,
+.links .contacts:focus {
     color: var(--accent-color);
 }
 
-.links .contacts:hover,
-.links .contacts:focus {
+.links .contacts:hover .contacts-icon,
+.links .contacts:focus .contacts-icon {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.studio:valid {
     color: var(--accent-color);
 }
 
@@ -390,6 +407,10 @@ li {
     background-color: var(--alternative-bgr);
 }
 
+.basement-list {
+    display: flex;
+}
+
 .logo-two {
     color: var(--alt-color);
 }
@@ -442,6 +463,57 @@ li {
 .links .city:hover,
 .links .city:focus {
     color: var(--accent-color);
+}
+
+.basement-social {
+    display: block;
+    margin-left: 70px;
+}
+
+.basement-social .basement-social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--alt-color);
+}
+
+.basement-social-list {
+    display: inline-flex;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.basement-social-item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.basement-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.basement-social-icon {
+    fill: var(--alt-color);
+    width: 20px;
+    height: 20px;
+}
+
+.basement-socisl-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.basement-socisl-link:hover,
+.basement-socisl-link:focus {
+    background-color: var(--accent-color);
 }
 
 /*портфоліо стилізація*/
