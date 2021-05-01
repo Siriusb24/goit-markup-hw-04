@@ -294,7 +294,7 @@ li {
 }
 
 .card-woker .card-item {
-    padding: 30px 32px 16px 32px;
+    padding: 30px 32px;
 }
 
 .team-woker .card-woker:not(:last-child) {
@@ -311,7 +311,8 @@ li {
 }
 
 .position {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -322,7 +323,6 @@ li {
 .social-links {
     display: inline-flex;
     padding-left: 0;
-    padding-bottom: 30px;
 }
 
 .social-links .social-icon:not(:last-child) {
@@ -379,6 +379,7 @@ li {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
 
 .clients-item:not(:last-child) {
@@ -407,8 +408,14 @@ li {
     background-color: var(--alternative-bgr);
 }
 
+.basement-social-title,
+.basement-social-list {
+    margin: 0;
+}
+
 .basement-list {
     display: flex;
+    align-items: baseline;
 }
 
 .logo-two {
@@ -547,8 +554,6 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(100, 8, 8, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border: 0;
     border-radius: 4px;
 }
@@ -562,6 +567,7 @@ li {
 .discription {
     padding: 20px 24px;
 }
+
 .portfolio-title {
     display: flex;
     flex-wrap: wrap;
@@ -572,6 +578,7 @@ li {
 }
 
 .portfolio-item {
+    display: flex;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -585,8 +592,15 @@ li {
     margin-bottom: 0;
 }
 
-.portfolio-item {
+.portfolio-link {
     border: 1px solid #eeeeee;
+    text-decoration: none;
+}
+
+.portfolio-item .portfolio-link:hover,
+.portfolio-item .portfolio-link:focus {
+    box-shadow: 0px 3px 1px rgba(100, 8, 8, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
@@ -607,4 +621,5 @@ li {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+    color: var(--main-color);
 }
